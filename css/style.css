@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+hr{
+    overflow: visible;
+}
+
+#top{
+    width: 100%;
+    height: 100%;
+    background: url(../img/takeyama.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size:  cover;
+}
+
+.members, .photos{
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.members h1{
+    text-align: center;
+}
+
+hr{
+    margin: auto;
+}
+
+.member{
+    width: 30%;
+    float: left;
+    margin: 10px 1.5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg) scale(0);
+    opacity: 0;
+    color: #fafafa;
+    transition: 0.5s;
+}
+
+.member:hover .caption{
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+}
+
+.caption h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.caption p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.photos{
+    text-align: center;
+}
